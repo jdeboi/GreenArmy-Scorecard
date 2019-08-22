@@ -23,7 +23,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	
+
     <!-- Custom styles for this template -->
 	<link href="bootstrap/css/theme.css" rel="stylesheet">
     <link href="stylesheets/map.css" rel="stylesheet">
@@ -32,55 +32,12 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-	    <nav class="navbar navbar-inverse navbar-fixed-top">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	          <a class="navbar-brand" href="index.html">GreenARMY ScoreCARD</a>
-	        </div>
-	        <div id="navbar" class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
-	            <li><a href="index.html">Home</a></li>
-	            <li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
-	              <ul class="dropdown-menu" role="menu">
-	                <li><a href="about.html">Bill Selection</a></li>
-	                <li><a href="bills.html">Bill List</a></li>
-					<li><a href="methodology.html">Methodology</a></li>
-	              </ul>
-	            </li>
-				<li><a href="greenteam.html">GreenTEAM</a></li>
-	            <li class="dropdown active">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Scores <span class="caret"></span></a>
-	              <ul class="dropdown-menu" role="menu">
-	                <li><a href="map.html">Map</a></li>
-	                <li><a href="#">Table</a></li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav navbar-nav navbar-right">
-				  <li><a href="image/scorecard.pdf">PDF <span class="glyphicon glyphicon-download"></span></a></li>
-	            <li><a href="http://gogreenarmy.com/">GreenARMY Website</a></li>
-	          </ul>
-	        </div><!--/.nav-collapse -->
-	      </div>
-	    </nav>
-
-      </div>
-    </div>
 
     <div class="container theme-showcase">
       <div class="jumbotron">
         <h1>Scorecard: Table</h1>
         <p>Click and hover your mouse over this interactive table to see how legislators voted on GreenARMY bills.</p>
+        <a href="index.html"><button class="btn btn-primary">Click for Map View</button></a>
       </div>
 	 <nav id="mapNav" class="navbar navbar-default">
 	   <div class="container-fluid">
@@ -109,17 +66,17 @@
 	     </div><!-- /.navbar-collapse -->
 	   </div><!-- /.container-fluid -->
 	 </nav>
-      
-	  <!-- left sidebar with map visualization -->	  
+
+	  <!-- left sidebar with map visualization -->
 	  <div class="col-md-7">
   	  	<div id="legisTable"></div>
 	  </div>
-	  <!-- right sidebar that toggles between points and legislator stats -->	
+	  <!-- right sidebar that toggles between points and legislator stats -->
   	  <div class="col-md-5">
 		  <div id="legislatorStats">
 			<div id="legislatorStats">
 				<div id="bartip"><a info="Green is the % of all votes that the legislator voted with the GreenARMY, red is the % opposed, and gray is the % absent." class="tooltip"><img class="tooltipimg" src="images/tooltipicon.png" /></a></div>
-				<div id="squaretip"><a info="Each GA vote is represented by a square; red indicates the legislator opposed the GA, green is supported, and gray is absent. Click on the squares to see how other legislators voted on that particular bill." class="tooltip"><img class="tooltipimg" src="images/tooltipicon.png" /></a></div> 
+				<div id="squaretip"><a info="Each GA vote is represented by a square; red indicates the legislator opposed the GA, green is supported, and gray is absent. Click on the squares to see how other legislators voted on that particular bill." class="tooltip"><img class="tooltipimg" src="images/tooltipicon.png" /></a></div>
 				<div class="colorScore" id="score">
 					<span class="legisScore"></span><span id="percentSign">&#37;</span>
 					<!-- span class="legisGrade"></span -->
@@ -134,9 +91,9 @@
 							<p><strong>City:</strong><span class="legisCity"></span></p>
 							<p><strong>Email:</strong><span class="legisEmail"></span></p>
 							<p><strong>Phone:</strong><span class="legisPhone"></span></p>
-						</div>	
+						</div>
 					</div>
-				</div>	
+				</div>
 				<div id="votingRecord">
 					<div id="voteChart"></div>
 					<div id="voteInfo">
@@ -146,14 +103,14 @@
 				</div>
 			</div>
 		  </div>
-  	  </div>	
-	  
-	  
+  	  </div>
+
+
       <!-- FOOTER -->
       <footer>
 		  <hr>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 <a href="http://gogreenarmy.com/">GreenARMY</a></p>
+        <p>&copy; 2015 <a href="http://gogreenarmy.org/">GreenARMY</a></p>
       </footer>
 
     </div><!-- /.container -->
