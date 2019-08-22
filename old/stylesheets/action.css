@@ -1,0 +1,105 @@
+	body {
+		background-color: white;
+		font-family: 'Proxima Nova Bold',"Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+		//font-family:"Helvetica",Geneva, sans-serif;
+	}
+	
+	#legisImage {
+		width:144px;
+		padding-right:15px;
+	}
+	#legisImage img{
+		height:180px;
+		
+	}
+	#svgDiv{
+		width:100%;
+		float:left;
+	}
+	
+	#topBanner{
+		position:relative;
+		height:350px;
+		margin:-10px;
+		background-image: url(../images/generalfull.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;	
+		background-position:0 -100px;
+		border-bottom:0px solid gray;
+	    
+	}
+	#topBanner a{
+		height:100%;
+		width:100%;
+	}
+	#bottomBanner{
+		position:relative;
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;
+		height:180px;
+		padding-top:5px;
+	}
+	.centered {
+		text-align: center;
+	    width: 50%;
+	    margin: 0 auto;
+	}
+	#logo {
+		position:absolute;
+		top:303px;
+		width:100%;
+		margin-left:-8px;	
+	}
+	#logo img{
+		height:100px;
+		width:100px;
+	}
+	#title {
+		position:relative;
+		top:50px;
+	}
+	#whiteCirc {
+		position:relative;
+		top:300px;
+	}
+	#loadingMessage {
+		position:absolute;
+		top:500px;
+		color:green;
+		font-size:200%;
+	}
+	hr {
+		border-top: 1px solid #E0E0E0;
+	}
+	#title hr {
+		width:400px;
+	}
+	
+	#title a {
+		text-decoration: none;
+		color:black;
+	}
+	
+	#title a:hover{
+		color:green;
+	}
+	
+	
+	#footer {
+		clear:both;
+		height:100px;
+	}
+	
+	
+	.hidden {
+	    display: none;
+	}
+	
+	.highlighted {
+		text-decoration:underlined;
+		color:green;
+		font-size:130%;
+	}
+	
+	

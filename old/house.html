@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/visual.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/progressjs.css">
+		<script src="scripts/progress.js"></script>
+		<script src="scripts/rainbowvis.js"></script>
+		<script type="text/javascript" src="scripts/d3.v3.min.js"></script>
+		<script type="text/javascript" src="scripts/tabletop.js"></script>
+	</head>
+	<body>
+		<a href="http://gogreenarmy.com"><div id="topBanner">
+			<div class="centered textCentered">
+				<div class="centered" id="loadingMessage"><h1>Loading...</h1></div>
+				<div class="centered"id="whiteCirc">
+					<svg height="55" width="110">
+						<circle cx="55" cy="55" r="55" fill="white"></circle>
+					</svg>
+				</div>
+			</div>
+		</div></a>
+		
+		<div id="bottomBanner">
+			<div id="title" class="centered textCentered">
+				<h1>GreenARMY ScoreCARD</h1> 
+				<h4><a href="index.html"><em>GreenTeam</em></a><span style="padding-left:10px">|</span>
+					<a href="#"><span style="padding-left:10px"></span><em><span class="highlighted">House</span></em></a><span style="padding-left:10px">|</span>
+					<a href="senate.html"><span style="padding-left:10px"></span><em>Senate</em></a><span style="padding-left:10px">|</span>
+					<a href="methodology.html"><span style="padding-left:10px"></span><em>Methodology</em></a>
+				</h4>
+				<hr>
+			</div>
+		</div>
+		<div id="logo"><div class="centered textCentered"><a href="http://gogreenarmy.com"><img src="images/logogreenarmy.png"  /></a></div></div>
+		<div id="selectView" class="notVisible">
+			<div id="switch" class="toggle-btn-grp joint-toggle">
+			    <label onclick="" class="toggle-btn success">
+					<input type="radio"/>map
+				</label>
+				<label onclick="" class="toggle-btn">
+					<input type="radio" />table
+				</label>
+			</div>	
+		</div>
+		<div id="container" class="notVisible">
+			<div id="stuffCenter" class="centered">
+				<div id="selectorChart">
+					<div id="svgDiv">
+						<div id="maptip"><a info="The greener the legislative district, the more times the legislator supported the GreenARMY position. Red districts indicate the legislator opposed the GreenARMY position." class="tooltip"><img  class="tooltipimg" src="images/tooltipicon.png" /></a>
+						</div>
+					</div>	
+					<div id="legisTable" class="hidden"></div>
+				</div>
+				<div id="legislatorStats">
+					<div id="bartip"><a info="Green is the % of all votes that the legislator voted with the GreenARMY, red is the % opposed, and gray is the % absent." class="tooltip"><img class="tooltipimg" src="images/tooltipicon.png" /></a></div>
+					<div id="squaretip"><a info="Each GA vote is represented by a square; red indicates the legislator opposed the GA, green is supported, and gray is absent. Click on the squares to see how other legislators voted on that particular bill." class="tooltip"><img class="tooltipimg" src="images/tooltipicon.png" /></a></div> 
+					<div class="colorScore" id="score">
+						<span class="legisScore"></span><span id="percentSign">&#37;</span>
+						<!-- span class="legisGrade"></span -->
+					</div>
+					<div id="legisBars"></div>
+					<p class="legisName"></p>
+					<div id="legisSquare">
+						<div class="floatleft" id="legisImage"><img class="legisImage" src="" /></div>
+						<div class="floatleft" id="legisBoxed">
+							<div id="legisTextBox">
+								<p><strong>District:</strong><span class="legisDistrict"></span></p>
+								<p><strong>City:</strong><span class="legisCity"></span></p>
+								<p><strong>Email:</strong><span class="legisEmail"></span></p>
+								<p><strong>Phone:</strong><span class="legisPhone"></span></p>
+							</div>	
+						</div>
+					</div>	
+					<div id="votingRecord">
+						<div id="voteChart"></div>
+						<div id="voteInfo">
+							<p><strong><span id="billGenre"></span></strong><br/><em><span id="billNum"></span></em></p>
+							<p><em><span id="billName"></em></span>- <span id="billNotes"></span></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>	
+		<div id="footer">
+		</div>
+		<script src="scripts/visual.js"></script>
+	</body>
+</html>

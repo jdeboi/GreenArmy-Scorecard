@@ -1,0 +1,27 @@
+/* From bootstrap theme.css */
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.list-group-item-image {
+	float:left;
+	height:60px;
+	padding-right:10px;
+}
+
+.list-group-item {
+	clear:both;
+}
+
+.pointImage {
+	max-width:400px;
+}
