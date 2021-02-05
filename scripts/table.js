@@ -124,7 +124,7 @@ function setLegislator(d) {
 	d3.select("body").selectAll(".legisCity").text(function() {return " "+d.City;});
 	d3.select("body").selectAll(".legisEmail").text(function() {return " "+d.Email;});
 	d3.select("body").selectAll(".legisPhone").text(function() {return " "+d.Phone;});
-	d3.select("body").select(".legisImage").attr("src",function() {return "/images/placeholder.jpg"}); //{return d.Picture;});
+	d3.select("body").select(".legisImage").attr("src",function() {return "https://jdeboi.com/GreenArmy-Scorecard/images/placeholder.jpg"}); //{return d.Picture;});
 	d3.select("body").selectAll(".colorScore").transition().style("color", getGradeColor(d));
 	d3.select("body").selectAll(".legisGrade").transition().text(function() {return d.Grade;})
 	d3.select("body").selectAll(".legisScore").transition().text(function() {return d.Score;});
